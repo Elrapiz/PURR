@@ -18,6 +18,11 @@
     border: 2px solid var(--clr-pale-400);
 }
 
+.form__response-msg {
+    font-size: 0.7rem;
+    color: var(--clr-error);
+}
+
 .form__username,
 .form__password {
     padding-block: 0.4em;
