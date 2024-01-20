@@ -13,3 +13,24 @@ img {
     height: auto;
 }
 /* #endregion */
+
+
+/* #region FONT-FACE */
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf'),
+         url('/assets/fonts/Inter/Inter-VariableFont_slnt\,wght.woff2');
+}
+/* #endregion */
+
+
+/* #region GLOBAL STYLES */
+:root {
+    --clr-dark: rgba(35, 35, 35, 1);
+    --clr-light: rgba(250, 250, 250, 1);
+}
+
+body {
+    font-family: 'Inter';
+}
+/* #endregion */
