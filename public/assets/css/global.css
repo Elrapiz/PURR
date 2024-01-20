@@ -31,6 +31,7 @@ img {
     --clr-primary-300: rgb(220, 60, 60);
     --clr-primary-400: rgba(220, 20, 60, 1);
     --clr-primary-500: rgb(220, 0, 60);
+    --clr-error: rgba(255, 0, 0, 1);
     --clr-pale-400: rgba(187,187,187);
     --clr-pale-300: rgba(221,221,221);
 }
