@@ -51,12 +51,14 @@ require_once '../config/database.php';
 
 $router = new \Core\Router();
 
+
 /* 
  * -----------------------------------------
  * ROUTING
  * -----------------------------------------
 */
 $router
-    ->get('/', 'TestController', 'Action')
-    ->post('/login', 'TestController', 'Action')
+    ->get('/', function() {
+        echo 'Landing route <br/>';
+    })
     ->init();
