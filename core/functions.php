@@ -11,7 +11,7 @@ function render(string $viewPath, mixed $data = null) {
 }
 
 function redirect(string $url) {
-    header("Location:/{$url}");
+    header("Location:{$url}");
 }
 
 function dd(mixed $data, bool $die = true): void {
