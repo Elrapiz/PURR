@@ -28,9 +28,19 @@ img {
 :root {
     --clr-dark: rgba(35, 35, 35, 1);
     --clr-light: rgba(250, 250, 250, 1);
+    --clr-primary-300: rgb(220, 60, 60);
+    --clr-primary-400: rgba(220, 20, 60, 1);
+    --clr-primary-500: rgb(220, 0, 60);
+    --clr-pale-400: rgba(187,187,187);
+    --clr-pale-300: rgba(221,221,221);
 }
 
 body {
+    background-color: var(--clr-light);
     font-family: 'Inter';
+}
+
+.dark-mode {
+    background-color: var(--clr-dark);
 }
 /* #endregion */
