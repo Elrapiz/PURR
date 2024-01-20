@@ -51,6 +51,9 @@ require_once '../config/database.php';
 
 $router = new \Core\Router();
 
+use \App\Controllers\Admin\Home;
+use \App\Controllers\Admin\Login;
+
 
 /* 
  * -----------------------------------------
@@ -61,4 +64,7 @@ $router
     ->get('/', function() {
         echo 'Landing route <br/>';
     })
+    ->get('/admin', Home::class)
+    ->get('/admin/login', Login::class)
+    ->post('/admin/login', Login::class, 'login')
     ->init();
