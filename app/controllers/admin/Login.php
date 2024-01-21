@@ -26,7 +26,8 @@ class Login {
         $password = $_POST['password'];
 
         if($this->adminModel->userExist($username, $password)) {
-            echo 'User exist';
+            $_SESSION['SESSADMIN'] = md5(uniqid('SESSADMIN'));
+            redirect('/admin');
         } else {
             render('../app/views/admin/login.view.php', [
                 'errorMsg' => 'Invalid username or password. Try again'
