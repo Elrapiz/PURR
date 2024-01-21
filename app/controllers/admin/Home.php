@@ -7,10 +7,21 @@ namespace App\Controllers\Admin;
 class Home {
 
     public function index() {
-        // check if there is a admin session login
+        
+        if(isset($_SESSION['SESSADMIN'])) {
+            render('../app/views/admin/home.view.php');
+        } else {
+            redirect('admin/login');
+        }
 
-        // otherwise
-        redirect('admin/login');
+    }
+
+    public function logout() {
+
+        session_unset();
+        session_destroy();
+        redirect('/admin');
+
     }
 
 }
