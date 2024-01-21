@@ -67,4 +67,5 @@ $router
     ->get('/admin', Home::class)
     ->get('/admin/login', Login::class)
     ->post('/admin/login', Login::class, 'login')
+    ->get('/admin/logout', Home::class, 'logout')
     ->init();
