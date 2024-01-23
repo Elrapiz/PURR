@@ -105,7 +105,6 @@ main {
 }
 
 .nav__item {
-    background-color: var(--clr-primary-300);
     padding-block: 1em;
 }
 
@@ -114,7 +113,8 @@ main {
     color: var(--clr-dark);
 }
 
-.current {
+.current,
+.current.nav__item > a {
     color: var(--clr-primary-400);
 }
 /* #endregion */

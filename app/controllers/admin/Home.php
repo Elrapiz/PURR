@@ -11,8 +11,10 @@ class Home {
     private Admin $adminModel;
 
     public function __construct() {
+
         global $dbc;
         $this->adminModel = new Admin($dbc);
+        
     }
 
     public function index() {
