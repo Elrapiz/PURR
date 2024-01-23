@@ -2,7 +2,7 @@
 
 $pageTitle = 'PURR | Admin';
 
-require_once realpath(VIEW_PATH . 'partials/admin/head.view.php');
+require_once realpath(VIEW_PATH . 'partials/head.view.php');
 require_once realpath(VIEW_PATH . 'partials/admin/header.view.php');
 ?>
 <div class="wrapper">
@@ -39,6 +39,9 @@ require_once realpath(VIEW_PATH . 'partials/admin/header.view.php');
             }
             ?>
         </div>
+
+        <script src="/assets/js/admin/main.js"></script>
+
     </main>
 </div>
-<?php require_once realpath(VIEW_PATH . 'partials/admin/footer.view.php') ?>
+<?php require_once realpath(VIEW_PATH . 'partials/footer.view.php') ?>

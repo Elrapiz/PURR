@@ -28,7 +28,7 @@ class Router {
 
         foreach($this->routes[$reqMethod] as $route) {
             if($route['uri'] === $reqUri) {
-                
+
                 if(is_callable($route['handler'])) {
                     call_user_func($route['handler']);
                 } else {

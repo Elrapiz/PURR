@@ -1,7 +1,7 @@
 <?php
 
 $pageTitle = 'PURR | Login';
-require_once realpath(VIEW_PATH . 'partials/admin/head.view.php');
+require_once realpath(VIEW_PATH . 'partials/head.view.php');
 
 ?>
 <body>

@@ -119,5 +119,16 @@ main {
 }
 /* #endregion */
 
+/* #region MANAGER STYLE */
+.manager {
+    padding: 1em;
+    width: 100%;
+}
+/* #endregion */
+
+/* #region UNIVERSITY VIEW STYLE */
+
+/* #endregion */
+
 /* #endregion */
 
