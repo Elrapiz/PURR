@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PURR | Admin</title>
-</head>
-<body>
-    
-    <a href="/admin/logout">Logout</a>
+<?php
 
-</body>
-</html>
+$pageTitle = 'PURR | Admin';
+
+require_once realpath(VIEW_PATH . 'partials/admin/head.view.php');
+require_once realpath(VIEW_PATH . 'partials/admin/header.view.php');
+?>
+<main>
+    <?php require_once realpath(VIEW_PATH . 'partials/admin/nav.view.php') ?>
+</main>
+<?php require_once realpath(VIEW_PATH . 'partials/admin/footer.view.php') ?>

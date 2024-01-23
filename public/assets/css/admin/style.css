@@ -1,0 +1,106 @@
+/* #region LOGIN STYLE */
+.form {
+    max-width: 20em;
+    margin: 2em auto;
+}
+
+.form__title {
+    padding: 0.5em 1.5em;
+    background-color: var(--clr-primary-400);
+    color: var(--clr-light);
+    font-size: 1rem;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 1em;
+    border: 2px solid var(--clr-pale-400);
+}
+
+.form__response-msg {
+    font-size: 0.7rem;
+    color: var(--clr-error);
+}
+
+.form__username,
+.form__password {
+    padding-block: 0.4em;
+    padding-inline-start: 0.5em;
+}
+
+.form__login {
+    max-width: fit-content;
+    padding: 0.3em 1em;
+    border: none;
+    background-color: var(--clr-primary-400);
+    color: var(--clr-light);
+    cursor: pointer;
+}
+
+.form__login:hover {
+    background-color: var(--clr-primary-300);
+}
+
+.form__login:active {
+    background-color: var(--clr-primary-500);
+}
+/* #endregion */
+
+/* #region HOME STYLE */
+
+/* #region TOP BAR STYLE */
+.top-bar {
+    padding-block: 0.25em;
+    background-color: var(--clr-primary-400);
+    color: var(--clr-light);
+}
+
+.top-bar__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar__brand {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar__logo {
+    max-width: 2em;
+}
+
+.top-bar__logout {
+    color: var(--clr-light);
+    text-decoration: none;
+}
+
+.top-bar__brand-name {
+    font-weight: 900;
+}
+
+.top-bar__brand-name > sup {
+    margin-inline-start: 0.3em;
+    font-weight: 300;
+}
+
+.top-bar__logout:hover {
+    text-decoration: underline;
+}
+/* #endregion */
+
+/* #region NAV STYLE */
+.nav {
+    max-width: fit-content;
+    border-right: 2px solid var(--clr-pale-300);
+}
+
+.current {
+    color: var(--clr-primary-400);
+}
+/* #endregion */
+
+/* #endregion */
+

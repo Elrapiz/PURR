@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PURR | Login</title>
+<?php
 
-    <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/admin/login.css">
+$pageTitle = 'PURR | Login';
+require_once realpath(VIEW_PATH . 'partials/admin/head.view.php');
 
-</head>
+?>
 <body>
     
     <form class="form" action="/admin/login" method="post">
