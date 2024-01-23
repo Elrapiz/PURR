@@ -52,7 +52,6 @@ require_once '../config/database.php';
 $router = new \Core\Router();
 
 use \App\Controllers\Admin\Home;
-use \App\Controllers\Admin\Login;
 
 
 /* 
@@ -65,7 +64,12 @@ $router
         echo 'Landing route <br/>';
     })
     ->get('/admin', Home::class)
-    ->get('/admin/login', Login::class)
-    ->post('/admin/login', Login::class, 'login')
+    ->get('/admin/login', Home::class, 'loginView')
+    ->post('/admin/login', Home::class, 'login')
     ->get('/admin/logout', Home::class, 'logout')
+    ->get('/admin/university', Home::class)
+    ->get('/admin/rr', Home::class)
+    ->get('/admin/public-type', Home::class)
+    ->get('/admin/users', Home::class)
+    ->get('/admin/user-accounts', Home::class)
     ->init();

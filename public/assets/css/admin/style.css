@@ -91,10 +91,27 @@
 }
 /* #endregion */
 
+/* #region MAIN SECTION STYLE */
+main {
+    display: flex;
+}
+/* #endregion */
+
 /* #region NAV STYLE */
 .nav {
     max-width: fit-content;
+    min-height: 100dvh;
     border-right: 2px solid var(--clr-pale-300);
+}
+
+.nav__item {
+    background-color: var(--clr-primary-300);
+    padding-block: 1em;
+}
+
+.nav__item > a{
+    text-decoration: none;
+    color: var(--clr-dark);
 }
 
 .current {

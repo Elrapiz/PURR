@@ -37,6 +37,7 @@ img {
 }
 
 body {
+    min-height: 100dvh;
     background-color: var(--clr-light);
     font-family: 'Inter';
 }
